@@ -1,0 +1,23 @@
+\chapter{MATERIAIS E MÉTODOS}
+\label{cap:materiais-e-metodos}
+   Para o desenvolvimento do projeto apresentado, será necessário o conhecimento da linguagem de programação javascript, linguagem SQL. Além disso, será utilizado a biblioteca Node.js para o desenvolvimento do \textit{Backend} da aplicação, bem como a biblioteca ReactJs e do framework React-Admin para a construção de um painel administrativo (\textit{Frontend}). Além disso, para solucionar de forma eficiente o problema atual será utilizado as orientações presentes na RESOLUÇÃO Nº 1/2021/CMEEC/CUFCSOBRAL/REITORIA \cite{resolucao2021}.
+    
+    \section{Linguagem SQL}
+    \label{sec:sql}
+
+        Será utilizada para criação do banco de dados PostgreSQL, onde será armazenado todos os dados de usuários, bem como suas respostas das autoavaliações realizadas. Nesse caso de uso, a sua principal vantagem, é a capacidade de relacionar os usuários a suas funções especificas (docentes, discentes e técnicos administrativos) e suas devidas propriedades. 
+    
+    \section{Node.js}
+    \label{sec:node.js}
+        Será utilizado para criação do \textit{Backend} da aplicação. Nesse caso, estarei desenvolvendo uma \gls{API} onde será disponibilizado rotas no formato \gls{HTTP} (\textit{GET}, \textit{POST}, \textit{UPDATE} e \textit{DELETE}), onde as informações trafegam pela rede no formato de \gls{JSON}, para ser consumido pelos \textit{Frontends}.\nocite{docnode2021}
+        
+    \section{ReactJs e React-Admin}
+    \label{sec:reactjs}
+        Será utilizado para criação do \textit{Frontend} da aplicação. Nesse caso, será desenvolvido o painel administrativo da aplicação, onde será possível manipular dados de usuários, fichas e disciplinas.\nocite{docreact2021}\nocite{docreactadmin2021}
+
+    \section{Resolução do PPGEEC}
+    \label{sec:reactjs}
+        Será utilizado para orientar o processo de desenvolvimento do software, pois as fichas de autoavaliação devem seguir as normas indicadas nessa resolução. Dito isto, as fichas serão o instrumento para a autoavaliação do programa, sendo elas compostas por perguntas que terão as seguintes opções: Ótimo, Bom, Regular, Ruim, Péssimo, Não conheço e Não se aplica. Dessa forma, somente uma opção é permitida como resposta. Com isso, o tema de cada ficha será um dos seguintes: Ficha de avaliação da secretaria, Ficha de avaliação da coordenação, Ficha de avaliação dos discentes em relação aos docentes (disciplinas), Ficha de avaliação dos discentes em relação aos docentes (orientações), Ficha de avaliação dos docentes em relação ao desempenho dos discentes das disciplinas ministradas,
+        Ficha de avaliação dos docentes em relação ao desempenho dos discentes nas orientações, Ficha de avaliação das disciplinas,
+        Ficha de avaliação da banca de dissertação, Ficha de avaliação de eventos (quando ocorrerem),
+        Ficha de avaliação do egresso sobre o desempenho do PPGEEC e Ficha de avaliação da infraestrutura.
